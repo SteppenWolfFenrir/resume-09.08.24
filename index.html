@@ -1,69 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="valentin anashkin, valentin, anashkin, website">
-    <meta name="decription" content="This is my website!">
-    <title>My WebSite</title>
-</head>
-<body>
-    <img src="itsme.jpg" width="250">
-    <h1>Yes it's me</h1>
-    <p>My name is Valentin
-    <br>
-    I'm twenty two years old
-    <br>
-    I live in <em>Saint-Petersburg</em>
-    <br>
-    I started to learning Web Programming to become a <strong>Full-Stack Developer!</strong>
-    </p>
-    <hr>
-    <h2>My hobbies:</h2>
-    <ul>
-        <li>Reading</li>
-        <li>Programming</li>
-        <li>Learning foreign languages</li>
-    </ul>
-    <hr>
-    <table border="1">
-        <caption>Опыт работы</caption>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Тинькофф</td>
-                <td>Эксперт</td>
-                <td>2021 - 2023</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <h3>To get in touch with me:</h3>
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="name" id="name" placeholder="Введите имя"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="valentin anashkin, valentin, anashkin, website">
+        <meta name="decription" content="This is my website!">
+        <title>My WebSite</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="high">
+                <img class="avatar" src="myface.jpg">
+                <div class="high-inline">
+                    <h1 class="h">Hello! It's me</h1>
+                    <p>My name is <strong>Valentin</strong> and I'm <strong>twenty two years old</strong>
+                    <br>
+                    I'm from Russia and I live in <em>Saint-Petersburg</em>
+                    <br>
+                    </p>
+                    <hr>
+                    <p>
+                    I started learning Web Programming to become a <ins><strong>Full-Stack Developer!</strong></ins>
+                    <br>
+                    And how you can see this is my <ins><em>first steps</em></ins> for this way.
+                    </p>
+                </div>
+            </div>
+            <div class="middle">
+                <h2 class="h">Now I'd like to tell you something about myself specifically about my hobbies!</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Programming</li>
+                    <li>Learning foreign languages</li>
+                    <hr>
+                </ul>
+                <h3 class="h">My work experience:</h3>
+                <table class="tables">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Prisma</td>
+                            <td>Sales-assistant</td>
+                            <td>2018 - 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Leroy Merlin</td>
+                            <td>Sales-assistant</td>
+                            <td>2020 - 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Tinkoff</td>
+                            <td>Expert</td>
+                            <td>2021 - 2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="low">
+                <h3 class="h">To get in touch with me:</h3>
+                <form>
+                    <div class="name">
+                        <label for="name">Your name:</label>
+                        <input type="name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Your e-mail:</label>
+                        <input type="email" id="email" placeholder="Your e-mail">
+                    </div>
+                    <div class="message">
+                        <label for="message">Your message:</label>
+                        <textarea type="message" id="message" placeholder="Your message..."></textarea>
+                    </div>
+                    <button class="btn" type="button">Отправить</button>
+                </form>
+                <hr>
+                <h4 class="h">My links:</h4>
+                <div class="social">
+                    <a href="https://vk.com/fenrirsx" target="_blank"> VKontakte</a>
+                    <a href="https://github.com/SteppenWolfFenrir" target="_blank"> GitHub</a> 
+                    <a href="https://telegram.org/@fenrirsx" target="_blank"> Telegram</a>
+                </div>
+            </div>    
         </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email"> 
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <textarea type="message" id="message" placeholder="Ваше сообщение..."></textarea> 
-        </div>
-        <button type="button">Отправить</button>
-    </form>
-    <hr>
-    <h4>My links:</h4>
-    <a href="https://vk.com/fenrirsx" target="_blank"> VKontakte</a>
-    <a href="https://telegram.org/@fenrirsx" target="_blank"> Telegram</a>
-
-</body>
+    </body>
 </html>
